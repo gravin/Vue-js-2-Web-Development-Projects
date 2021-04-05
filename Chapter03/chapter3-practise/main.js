@@ -3,7 +3,7 @@ new Vue({
     el: '#app',
     data: state,
     template: `<div id="#app">
-{{worldRatio}}
+<top-bar :turn='turn' :current-player-index='currentPlayerIndex' :players='players'/>
 </div>`,
     mounted() {
         console.log(this.$data === state);
